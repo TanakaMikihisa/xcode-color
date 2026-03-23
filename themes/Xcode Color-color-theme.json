@@ -1,0 +1,676 @@
+{
+	"name": "Xcode Color",
+	"semanticHighlighting": true,
+	"colors": {
+		"activityBar.background": "#2C2C2E",
+		"activityBar.foreground": "#EBEBF5",
+		"activityBar.inactiveForeground": "#8E8E93",
+		"activityBarBadge.background": "#0A84FF",
+		"activityBarBadge.foreground": "#FFFFFF",
+		"badge.background": "#48484A",
+		"badge.foreground": "#EBEBF5",
+		"button.background": "#0A84FF",
+		"button.foreground": "#FFFFFF",
+		"button.hoverBackground": "#409CFF",
+		"dropdown.background": "#2C2C2E",
+		"dropdown.border": "#48484A",
+		"dropdown.foreground": "#EBEBF5",
+		"editor.background": "#2D2D30",
+		"editor.foreground": "#D0D0D0",
+		"editor.lineHighlightBackground": "#3A3A3C55",
+		"editor.selectionBackground": "#87adff45",
+		"editor.inactiveSelectionBackground": "#FFFFFF38",
+		"editorCursor.foreground": "#EBEBF5",
+		"editorWhitespace.foreground": "#48484A",
+		"editorIndentGuide.background": "#3A3A3C",
+		"editorIndentGuide.activeBackground": "#636366",
+		"editorLineNumber.foreground": "#636366",
+		"editorLineNumber.activeForeground": "#AEAEB2",
+		"editorGutter.background": "#2D2D30",
+		"editorGutter.modifiedBackground": "#0A84FF",
+		"editorGutter.addedBackground": "#30D158",
+		"editorGutter.deletedBackground": "#FF453A",
+		"minimap.background": "#2D2D30",
+		"editorBracketMatch.background": "#3A3A3C",
+		"editorBracketMatch.border": "#6BB2CC",
+		"editorError.foreground": "#FF453A",
+		"editorWarning.foreground": "#FFD60A",
+		"editorInfo.foreground": "#0A84FF",
+		"editorWidget.background": "#2C2C2E",
+		"editorWidget.border": "#48484A",
+		"editorSuggestWidget.background": "#2C2C2E",
+		"editorSuggestWidget.border": "#48484A",
+		"editorSuggestWidget.selectedBackground": "#3A3A3C",
+		"focusBorder": "#0A84FF",
+		"input.background": "#2C2C2E",
+		"input.border": "#48484A",
+		"input.foreground": "#EBEBF5",
+		"inputOption.activeBorder": "#0A84FF",
+		"list.activeSelectionBackground": "#3A3A3C",
+		"list.activeSelectionForeground": "#EBEBF5",
+		"list.hoverBackground": "#2C2C2E",
+		"list.inactiveSelectionBackground": "#2C2C2E",
+		"menu.background": "#2C2C2E",
+		"menu.foreground": "#EBEBF5",
+		"menu.selectionBackground": "#3A3A3C",
+		"menubar.selectionBackground": "#3A3A3C",
+		"notificationCenter.border": "#48484A",
+		"notificationToast.border": "#48484A",
+		"notifications.background": "#2C2C2E",
+		"notifications.border": "#48484A",
+		"panel.background": "#2D2D30",
+		"panel.border": "#48484A",
+		"panelTitle.activeBorder": "#0A84FF",
+		"panelTitle.activeForeground": "#EBEBF5",
+		"panelTitle.inactiveForeground": "#8E8E93",
+		"peekView.border": "#48484A",
+		"peekViewEditor.background": "#2D2D30",
+		"peekViewResult.background": "#2C2C2E",
+		"peekViewTitle.background": "#2C2C2E",
+		"progressBar.background": "#0A84FF",
+		"scrollbar.shadow": "#00000000",
+		"scrollbarSlider.activeBackground": "#636366AA",
+		"scrollbarSlider.background": "#48484A66",
+		"scrollbarSlider.hoverBackground": "#63636688",
+		"sideBar.background": "#1d1d1d",
+		"sideBar.foreground": "#EBEBF5",
+		"sideBarTitle.foreground": "#AEAEB2",
+		"sideBarSectionHeader.background": "#1d1d1d",
+		"sideBarSectionHeader.foreground": "#8E8E93",
+		"statusBar.background": "#2C2C2E",
+		"statusBar.foreground": "#EBEBF5",
+		"statusBar.noFolderBackground": "#2C2C2E",
+		"statusBar.debuggingBackground": "#EF8876",
+		"statusBarItem.prominentBackground": "#3A3A3C",
+		"tab.activeBackground": "#2D2D30",
+		"tab.activeForeground": "#EBEBF5",
+		"tab.inactiveBackground": "#2C2C2E",
+		"tab.inactiveForeground": "#8E8E93",
+		"tab.border": "#3A3A3C",
+		"tab.activeBorderTop": "#0A84FF",
+		"tab.unfocusedActiveBorderTop": "#636366",
+		"terminal.background": "#2D2D30",
+		"terminal.foreground": "#D0D0D0",
+		"terminal.ansiBlack": "#2D2D30",
+		"terminal.ansiRed": "#FF453A",
+		"terminal.ansiGreen": "#30D158",
+		"terminal.ansiYellow": "#FFD60A",
+		"terminal.ansiBlue": "#0A84FF",
+		"terminal.ansiMagenta": "#FF7AB2",
+		"terminal.ansiCyan": "#6BB2CC",
+		"terminal.ansiWhite": "#D0D0D0",
+		"terminal.ansiBrightBlack": "#636366",
+		"terminal.ansiBrightRed": "#FF6961",
+		"terminal.ansiBrightGreen": "#32D74B",
+		"terminal.ansiBrightYellow": "#FFD60A",
+		"terminal.ansiBrightBlue": "#6BB2CC",
+		"terminal.ansiBrightMagenta": "#FF9FCC",
+		"terminal.ansiBrightCyan": "#6BB2CC",
+		"terminal.ansiBrightWhite": "#F5F5F7",
+		"titleBar.activeBackground": "#2C2C2E",
+		"titleBar.activeForeground": "#EBEBF5",
+		"titleBar.inactiveBackground": "#2C2C2E",
+		"titleBar.inactiveForeground": "#8E8E93",
+		"widget.shadow": "#00000066"
+	},
+	"semanticTokenColors": {
+		"namespace": "#6BB2CC",
+		"type": "#6BB2CC",
+		"class": "#6BB2CC",
+		"enum": "#6BB2CC",
+		"interface": "#6BB2CC",
+		"struct": "#6BB2CC",
+		"typeParameter": "#6BB2CC",
+		"function": "#6BB2CC",
+		"method": "#6BB2CC",
+		"property": "#D0D0D0",
+		"enumMember": "#FFD60A",
+		"variable": "#D0D0D0",
+		"parameter": "#D0D0D0",
+		"number": "#DACC88",
+		"number:swift": "#DACC88",
+		"identifier:swift": "#6CB5CF",
+		"macro": "#EF8876",
+		"macro:swift": "#EF8876",
+		"macro.defaultLibrary:swift": "#AB84E5",
+		"*.defaultLibrary": "#6BB2CC",
+		"operator.defaultLibrary:swift": "#EBEBF5",
+		"*.readonly": "#FFD60A",
+		"class:swift": "#BFF6E9",
+		"class.declaration:swift": "#D4BBFA",
+		"class.definition:swift": "#D4BBFA",
+		"class.defaultLibrary:swift": "#D4BBFA",
+		"enum:swift": "#BFF6E9",
+		"enum.declaration:swift": "#D4BBFA",
+		"enum.definition:swift": "#D4BBFA",
+		"enum.defaultLibrary:swift": "#D4BBFA",
+		"struct:swift": "#BFF6E9",
+		"struct.declaration:swift": "#D4BBFA",
+		"struct.definition:swift": "#D4BBFA",
+		"struct.defaultLibrary:swift": "#D4BBFA",
+		"type:swift": "#D4BBFA",
+		"typeParameter:swift": "#BFF6E9",
+		"typeParameter.declaration:swift": "#D4BBFA",
+		"typeParameter.definition:swift": "#D4BBFA",
+		"typeParameter.defaultLibrary:swift": "#D4BBFA",
+		"namespace:swift": "#D4BBFA",
+		"interface:swift": "#BFF6E9",
+		"interface.declaration:swift": "#D4BBFA",
+		"interface.definition:swift": "#D4BBFA",
+		"interface.defaultLibrary:swift": "#D4BBFA",
+		"variable:swift": "#D0D0D0",
+		"variable.declaration:swift": "#6CB5CF",
+		"variable.readonly:swift": "#FFD60A",
+		"parameter:swift": "#6BB2CC",
+		"property:swift": "#89C0B4",
+		"property.declaration:swift": "#FFD60A",
+		"property.defaultLibrary:swift": "#AB84E5",
+		"function.declaration:swift": "#6BB2CC",
+		"method.declaration:swift": "#6BB2CC",
+		"function:swift": "#BFF6E9",
+		"method:swift": "#BFF6E9",
+		"method.defaultLibrary:swift": "#AB84E5",
+		"modifier:swift": "#AB84E5",
+		"enumMember:swift": "#89C0B4"
+	},
+	"tokenColors": [
+		{
+			"name": "Comment",
+			"scope": [
+				"comment",
+				"punctuation.definition.comment",
+				"comment.line",
+				"comment.block"
+			],
+			"settings": {
+				"foreground": "#6C7986"
+			}
+		},
+		{
+			"name": "Documentation comment (Swift / similar)",
+			"scope": [
+				"comment.block.documentation",
+				"comment.line.documentation"
+			],
+			"settings": {
+				"foreground": "#6C7986"
+			}
+		},
+		{
+			"name": "Keyword & storage",
+			"scope": [
+				"keyword",
+				"keyword.control",
+				"keyword.operator.new",
+				"storage.type",
+				"storage.modifier"
+			],
+			"settings": {
+				"foreground": "#FF7AB2"
+			}
+		},
+		{
+			"name": "Operator (general)",
+			"scope": [
+				"keyword.operator",
+				"punctuation.accessor"
+			],
+			"settings": {
+				"foreground": "#D0D0D0"
+			}
+		},
+		{
+			"name": "Punctuation",
+			"scope": [
+				"punctuation",
+				"punctuation.separator",
+				"punctuation.terminator",
+				"meta.brace",
+				"meta.delimiter"
+			],
+			"settings": {
+				"foreground": "#AEAEB2"
+			}
+		},
+		{
+			"name": "Swift — preprocessor / conditional (オレンジ)",
+			"scope": [
+				"punctuation.definition.preprocessor.swift",
+				"meta.preprocessor.conditional.swift"
+			],
+			"settings": {
+				"foreground": "#EF8876"
+			}
+		},
+		{
+			"name": "String",
+			"scope": [
+				"string",
+				"string.quoted",
+				"string.template"
+			],
+			"settings": {
+				"foreground": "#EF8876"
+			}
+		},
+		{
+			"name": "String interpolation / escape",
+			"scope": [
+				"punctuation.definition.template-expression",
+				"punctuation.section.embedded",
+				"constant.character.escape",
+				"constant.other.placeholder"
+			],
+			"settings": {
+				"foreground": "#FFD60A"
+			}
+		},
+		{
+			"name": "Swift — string interpolation \\( … ) delimiters (白)",
+			"scope": [
+				"punctuation.section.embedded.begin.swift",
+				"punctuation.section.embedded.end.swift"
+			],
+			"settings": {
+				"foreground": "#EBEBF5"
+			}
+		},
+		{
+			"name": "Number & built-in constants",
+			"scope": [
+				"constant.numeric",
+				"constant.language",
+				"constant.character",
+				"support.constant"
+			],
+			"settings": {
+				"foreground": "#DACC88"
+			}
+		},
+		{
+			"name": "Entity / type names",
+			"scope": [
+				"entity.name.type",
+				"entity.name.class",
+				"entity.name.enum",
+				"entity.name.struct",
+				"entity.name.interface",
+				"entity.other.inherited-class",
+				"support.type",
+				"support.class"
+			],
+			"settings": {
+				"foreground": "#6BB2CC"
+			}
+		},
+		{
+			"name": "Function & method names",
+			"scope": [
+				"entity.name.function",
+				"support.function",
+				"variable.function"
+			],
+			"settings": {
+				"foreground": "#6BB2CC"
+			}
+		},
+		{
+			"name": "Swift — support.function any-method (濃い紫)",
+			"scope": [
+				"support.function.any-method.swift"
+			],
+			"settings": {
+				"foreground": "#AB84E5"
+			}
+		},
+		{
+			"name": "Swift — availability condition (ピンク)",
+			"scope": [
+				"support.function.availability-condition.swift"
+			],
+			"settings": {
+				"foreground": "#FF7AB2"
+			}
+		},
+		{
+			"name": "Swift — meta.function-call (白)",
+			"scope": [
+				"meta.function-call.swift",
+				"meta.function-call"
+			],
+			"settings": {
+				"foreground": "#EBEBF5"
+			}
+		},
+		{
+			"name": "Variable & parameter",
+			"scope": [
+				"variable",
+				"variable.parameter",
+				"variable.other"
+			],
+			"settings": {
+				"foreground": "#D0D0D0"
+			}
+		},
+		{
+			"name": "Language variable (self, this)",
+			"scope": [
+				"variable.language"
+			],
+			"settings": {
+				"foreground": "#FF7AB2"
+			}
+		},
+		{
+			"name": "Attributes / decorators",
+			"scope": [
+				"entity.other.attribute-name",
+				"meta.attribute",
+				"storage.type.annotation",
+				"punctuation.definition.annotation"
+			],
+			"settings": {
+				"foreground": "#FF6482"
+			}
+		},
+		{
+			"name": "Invalid",
+			"scope": [
+				"invalid",
+				"invalid.illegal"
+			],
+			"settings": {
+				"foreground": "#FF453A"
+			}
+		},
+		{
+			"name": "Markup — tag",
+			"scope": [
+				"entity.name.tag",
+				"meta.tag.sgml"
+			],
+			"settings": {
+				"foreground": "#6BB2CC"
+			}
+		},
+		{
+			"name": "HTML / XML attribute name",
+			"scope": [
+				"text.html.basic entity.other.attribute-name",
+				"text.html entity.other.attribute-name",
+				"text.xml entity.other.attribute-name"
+			],
+			"settings": {
+				"foreground": "#EF8876"
+			}
+		},
+		{
+			"name": "CSS property",
+			"scope": [
+				"support.type.property-name.css",
+				"support.type.property-name.scss",
+				"support.type.property-name.less"
+			],
+			"settings": {
+				"foreground": "#6BB2CC"
+			}
+		},
+		{
+			"name": "JSON keys",
+			"scope": [
+				"support.type.property-name.json"
+			],
+			"settings": {
+				"foreground": "#6BB2CC"
+			}
+		},
+		{
+			"name": "Regular expression",
+			"scope": [
+				"string.regexp"
+			],
+			"settings": {
+				"foreground": "#EF8876"
+			}
+		},
+		{
+			"name": "Markdown — heading",
+			"scope": [
+				"markup.heading",
+				"markdown.heading"
+			],
+			"settings": {
+				"foreground": "#6BB2CC"
+			}
+		},
+		{
+			"name": "Markdown — link",
+			"scope": [
+				"markup.underline.link",
+				"string.other.link.title.markdown"
+			],
+			"settings": {
+				"foreground": "#0A84FF"
+			}
+		},
+		{
+			"name": "Diff — inserted",
+			"scope": [
+				"markup.inserted",
+				"markup.inserted.git_gutter"
+			],
+			"settings": {
+				"foreground": "#30D158"
+			}
+		},
+		{
+			"name": "Diff — deleted",
+			"scope": [
+				"markup.deleted",
+				"markup.deleted.git_gutter"
+			],
+			"settings": {
+				"foreground": "#FF453A"
+			}
+		},
+		{
+			"name": "Diff — changed",
+			"scope": [
+				"markup.changed",
+				"markup.changed.git_gutter"
+			],
+			"settings": {
+				"foreground": "#FFD60A"
+			}
+		},
+		{
+			"name": "Swift — attribute & storage modifiers (紫)",
+			"scope": [
+				"punctuation.definition.attribute.swift",
+				"storage.modifier.attribute.swift",
+				"storage.modifier.swift",
+				"storage.modifier.async.swift",
+				"storage.modifier.exception.swift",
+				"meta.attribute.swift"
+			],
+			"settings": {
+				"foreground": "#D4BBFA"
+			}
+		},
+		{
+			"name": "Swift — interface / type-name / inheritance / enum def (紫)",
+			"scope": [
+				"support.type.swift",
+				"meta.definition.type.enum.swift",
+				"meta.type-name.swift",
+				"entity.other.inherited-class.swift",
+				"meta.inheritance-list.more-types",
+				"meta.inheritance-clause.swift"
+			],
+			"settings": {
+				"foreground": "#D4BBFA"
+			}
+		},
+		{
+			"name": "Swift — protocol definition (明るい緑・TextMate 補助)",
+			"scope": [
+				"meta.definition.type.protocol.swift"
+			],
+			"settings": {
+				"foreground": "#BFF6E9"
+			}
+		},
+		{
+			"name": "Swift — string (オレンジ)",
+			"scope": [
+				"punctuation.definition.string.begin.swift",
+				"punctuation.definition.string.end.swift",
+				"string.quoted.double.single-line.swift"
+			],
+			"settings": {
+				"foreground": "#EF8876"
+			}
+		},
+		{
+			"name": "Swift — identifier & type body / class (インディゴ)",
+			"scope": [
+				"punctuation.definition.identifier.swift",
+				"variable.other.enummember.swift",
+				"meta.definition.type.body.swift",
+				"meta.definition.type.class.swift"
+			],
+			"settings": {
+				"foreground": "#6CB5CF"
+			}
+		},
+		{
+			"name": "Swift — function parameters (TextMate)",
+			"scope": [
+				"variable.parameter.function.swift",
+				"support.variable.parameter.swift"
+			],
+			"settings": {
+				"foreground": "#6BB2CC"
+			}
+		},
+		{
+			"name": "Swift — type name / import meta (白)",
+			"scope": [
+				"entity.name.type.swift",
+				"meta.import.swift"
+			],
+			"settings": {
+				"foreground": "#FFFFFF"
+			}
+		},
+		{
+			"name": "Comma (white, Swift)",
+			"scope": [
+				"punctuation.separator.parameters.swift",
+				"source.swift punctuation.separator"
+			],
+			"settings": {
+				"foreground": "#FFFFFF"
+			}
+		},
+		{
+			"name": "Colon (white)",
+			"scope": [
+				"punctuation.separator.key-value",
+				"punctuation.separator.key-value.swift",
+				"punctuation.separator.argument-label.swift",
+				"punctuation.separator.argument-label.begin.swift",
+				"punctuation.separator.inheritance-clause.swift",
+				"keyword.operator.ternary.swift"
+			],
+			"settings": {
+				"foreground": "#FFFFFF"
+			}
+		},
+		{
+			"name": "Brackets / grouping (white)",
+			"scope": [
+				"meta.brace.round",
+				"meta.brace.square",
+				"meta.brace.curly",
+				"punctuation.definition.parameters.begin",
+				"punctuation.definition.parameters.end",
+				"punctuation.definition.parameters.begin.swift",
+				"punctuation.definition.parameters.end.swift",
+				"punctuation.definition.arguments.begin",
+				"punctuation.definition.arguments.end",
+				"punctuation.definition.arguments.begin.swift",
+				"punctuation.definition.arguments.end.swift",
+				"punctuation.definition.type.begin",
+				"punctuation.definition.type.end",
+				"punctuation.definition.type.begin.swift",
+				"punctuation.definition.type.end.swift",
+				"punctuation.definition.generic.begin",
+				"punctuation.definition.generic.end",
+				"punctuation.section.scope.begin",
+				"punctuation.section.scope.end",
+				"punctuation.section.scope.begin.swift",
+				"punctuation.section.scope.end.swift",
+				"punctuation.section.block.begin",
+				"punctuation.section.block.end",
+				"punctuation.section.group.begin",
+				"punctuation.section.group.end",
+				"punctuation.section.function.begin",
+				"punctuation.section.function.end",
+				"punctuation.section.function.begin.swift",
+				"punctuation.section.function.end.swift",
+				"punctuation.definition.precedencegroup.begin.swift",
+				"punctuation.definition.precedencegroup.end.swift",
+				"punctuation.definition.tag",
+				"punctuation.definition.tag.begin",
+				"punctuation.definition.tag.end"
+			],
+			"settings": {
+				"foreground": "#FFFFFF"
+			}
+		},
+		{
+			"name": "Swift — brackets inside type body / class / enum (白)",
+			"scope": [
+				"meta.definition.type.body.swift punctuation.definition.arguments.begin.swift",
+				"meta.definition.type.body.swift punctuation.definition.arguments.end.swift",
+				"meta.definition.type.body.swift punctuation.section.scope.begin.swift",
+				"meta.definition.type.body.swift punctuation.section.scope.end.swift",
+				"meta.definition.type.body.swift punctuation.definition.type.begin.swift",
+				"meta.definition.type.body.swift punctuation.definition.type.end.swift",
+				"meta.definition.type.body.swift punctuation.definition.generic.begin.swift",
+				"meta.definition.type.body.swift punctuation.definition.generic.end.swift",
+				"meta.definition.type.class.swift punctuation.definition.arguments.begin.swift",
+				"meta.definition.type.class.swift punctuation.definition.arguments.end.swift",
+				"meta.definition.type.class.swift punctuation.section.scope.begin.swift",
+				"meta.definition.type.class.swift punctuation.section.scope.end.swift",
+				"meta.definition.type.class.swift punctuation.definition.type.begin.swift",
+				"meta.definition.type.class.swift punctuation.definition.type.end.swift",
+				"meta.definition.type.class.swift punctuation.definition.generic.begin.swift",
+				"meta.definition.type.class.swift punctuation.definition.generic.end.swift",
+				"meta.definition.type.enum.swift punctuation.definition.arguments.begin.swift",
+				"meta.definition.type.enum.swift punctuation.definition.arguments.end.swift",
+				"meta.definition.type.enum.swift punctuation.section.scope.begin.swift",
+				"meta.definition.type.enum.swift punctuation.section.scope.end.swift",
+				"meta.definition.type.enum.swift punctuation.definition.type.begin.swift",
+				"meta.definition.type.enum.swift punctuation.definition.type.end.swift",
+				"meta.definition.type.enum.swift punctuation.definition.generic.begin.swift",
+				"meta.definition.type.enum.swift punctuation.definition.generic.end.swift"
+			],
+			"settings": {
+				"foreground": "#FFFFFF"
+			}
+		},
+		{
+			"name": "Swift — subscript brackets (白)",
+			"scope": [
+				"meta.subscript-expression.swift punctuation.definition.arguments.begin.swift",
+				"meta.subscript-expression.swift punctuation.definition.arguments.end.swift"
+			],
+			"settings": {
+				"foreground": "#FFFFFF"
+			}
+		}
+	]
+}
