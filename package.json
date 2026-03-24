@@ -2,7 +2,7 @@
   "name": "xcode-color",
   "displayName": "Xcode Color",
   "description": "Provides an Xcode-style color theme for Visual Studio Code/Cursor, along with Swift color mappings.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "TanakaMikihisa",
   "license": "MIT",
   "icon": "assets/icon.png",
@@ -11,7 +11,7 @@
     "url": "https://github.com/TanakaMikihisa/xcode-color.git"
   },
   "engines": {
-    "vscode": "^1.110.0"
+    "vscode": "^1.80.0"
   },
   "categories": [
     "Themes"
