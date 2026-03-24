@@ -129,7 +129,7 @@
 		"parameter": "#D0D0D0",
 		"number": "#DACC88",
 		"number:swift": "#DACC88",
-		"identifier:swift": "#6CB5CF",
+		"identifier:swift": "#6BB2CC",
 		"macro": "#EF8876",
 		"macro:swift": "#EF8876",
 		"macro.defaultLibrary:swift": "#AB84E5",
@@ -168,8 +168,8 @@
 		"function.declaration:swift": "#6BB2CC",
 		"method.declaration:swift": "#6BB2CC",
 		"function:swift": "#BFF6E9",
-		"method:swift": "#BFF6E9",
-		"method.defaultLibrary:swift": "#AB84E5",
+		"method:swift": "#FFFFFF",
+		"method.defaultLibrary:swift": "#FFFFFF",
 		"modifier:swift": "#AB84E5",
 		"enumMember:swift": "#89C0B4"
 	},
@@ -541,7 +541,7 @@
 				"meta.definition.type.class.swift"
 			],
 			"settings": {
-				"foreground": "#6CB5CF"
+				"foreground": "#8BE0FE"
 			}
 		},
 		{
@@ -557,7 +557,15 @@
 		{
 			"name": "Swift — type name / import meta (白)",
 			"scope": [
-				"entity.name.type.swift",
+				"entity.name.type.swift"
+			],
+			"settings": {
+				"foreground": "#8BE0FE"
+			}
+		},
+		{
+			"name": "Swift — import meta (白)",
+			"scope": [
 				"meta.import.swift"
 			],
 			"settings": {
