@@ -1,0 +1,105 @@
+# package.json の version が、この push の直前の main 先端（github.event.before）から
+# 現在の先端（after）へ変わったときだけ Marketplace / Open VSX に公開する。
+# 手動実行（workflow_dispatch）は常にデプロイ（再試行用）。
+#
+# Secrets: VSCE_PAT, VSX_DEPLOY_KEY
+
+name: Deploy to Marketplace and Open VSX
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "package.json"
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-marketplace-vsx
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      # before/after で version を比較するため、push 前のコミットも取得できるようにする
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # push: github.event.before → after の間で version が変わったか（複数コミットの push でも正しい）
+      # workflow_dispatch: 常にデプロイ
+      - name: Detect package.json version change
+        id: version
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "手動実行のためデプロイします。"
+            exit 0
+          fi
+
+          NEW=$(node -p "require('./package.json').version")
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.event.after }}"
+
+          # 新規ブランチ作成時など（before が null コミット）
+          if [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "初回 push のため version 変更として扱います。"
+            exit 0
+          fi
+
+          OLD=$(git show "${BEFORE}:package.json" 2>/dev/null | jq -r .version 2>/dev/null || echo "")
+          if [ "$OLD" = "$NEW" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "この push の前後で version は $NEW のままです。デプロイをスキップします。"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "version: $OLD -> $NEW (before=${BEFORE:0:7} after=${AFTER:0:7})"
+          fi
+
+      - name: Package VSIX
+        if: steps.version.outputs.changed == 'true'
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          VSIX_FILE="xcode-color-${VERSION}.vsix"
+          npx --yes @vscode/vsce package --out "$VSIX_FILE"
+          echo "VSIX_FILE=$VSIX_FILE" >> "$GITHUB_ENV"
+
+      - name: Publish to Visual Studio Marketplace
+        if: steps.version.outputs.changed == 'true'
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: |
+          if [ -z "$VSCE_PAT" ]; then
+            echo "VSCE_PAT が未設定です。Repository secrets に VSCE_PAT を追加してください。" >&2
+            exit 1
+          fi
+          npx --yes @vscode/vsce publish --packagePath "$VSIX_FILE" -p "$VSCE_PAT"
+
+      - name: Publish to Open VSX
+        if: steps.version.outputs.changed == 'true'
+        env:
+          VSX_DEPLOY_KEY: ${{ secrets.VSX_DEPLOY_KEY }}
+        run: |
+          if [ -z "$VSX_DEPLOY_KEY" ]; then
+            echo "VSX_DEPLOY_KEY が未設定です。Repository secrets に VSX_DEPLOY_KEY を追加してください。" >&2
+            exit 1
+          fi
+          npx --yes ovsx publish "$VSIX_FILE" -p "$VSX_DEPLOY_KEY"
+
+      - name: Upload VSIX artifact
+        if: steps.version.outputs.changed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcode-color-vsix
+          path: ${{ env.VSIX_FILE }}
